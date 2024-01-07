@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src = "js/maplecalcs.js"></script>
+</head>
+
+<body>
+  <div id = "container">
+	  <header>
+		<h1 id="top">Maple Sugaring</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="HowToMake.html">How To Make</a>
+			<a href="SugarContentCalculator.html" class = "active">Sugar Content Calculator</a>
+		</nav>
+		
+	  </header>
+
+	  <main>
+		
+		<div>
+			<h2>
+				Sugar Content Calculator
+			</h2>
+			<p>
+				If you want to calculate the average sugar content of your sap, 
+				keep track of how much sap you started with and how much syrup 
+				you made, and use this calculator. This assumes you boilded it 
+				down to 67% sugar.
+			</p>
+			<br>
+			<label for="startquant">
+				How much sap did you start with? Use gallons. 
+			</label>
+			<input type="text" id="startquant">
+			
+			<br><br>
+			<label for="finishquant">
+				How much syrup did you make? Uses cups.
+			</label>
+			<input type="text" id="finishquant">
+			<br><br>
+			<button onclick="calcSugarContent()">
+				Calculate
+			</button>
+		</div>
+		<div id="results">
+		
+		</div>
+		
+
+	  </main>
+  </div>
+	  <footer>
+		This page was created in 2023 by a random maple syrup enthusiast. 
+	  </footer>
+  
+</body>
+
+</html>
